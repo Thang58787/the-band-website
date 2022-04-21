@@ -30,7 +30,7 @@ html {
     color: #fff;
     text-decoration: none;
     line-height: 46px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 #navigator li:hover a {
