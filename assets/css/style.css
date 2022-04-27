@@ -1,3 +1,7 @@
+:root {
+    --heading-height: 46px;
+}
+
 /* Reset CSS */
 * {
     padding: 0;
@@ -10,36 +14,62 @@ html {
 }
 
 #main {
-    
+
 }
 
 #header {
+    height: 46px;
     background-color: #000;
-    height: 48px;
+
 }
 
-#navigator {
+#nav {
     
 }
 
-#navigator li {
+#nav li {
     display: inline-block;
+    position: relative;
 }
 
-#navigator li a {
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: inline-block;
     color: #fff;
     text-decoration: none;
-    line-height: 46px;
-    /* display: inline-block; */
+    list-style: none;
+    padding: 0px 24px;
+    line-height: var(--heading-height);
 }
 
-#navigator li:hover a {
-    color: #000;
+#nav > li:hover > a {
     background-color: #ccc;
+    color: #000;
+} 
+
+#nav li:hover .subnav {
+    display: block;
 }
 
-#navigator .sub-navigator {
+#nav .subnav {
     display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li a {
+    color: #000;
+    min-width: 160px;
+    padding: 0px 19px;
+    line-height: 38px;
+}
+
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
 }
 
 #slider {
