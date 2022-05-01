@@ -1,0 +1,92 @@
+/* 
+PC: >= 1024px (64em)
+Tablet: >= 740px & < 1024px (>= 46.25em & < 63.9375em)
+Mobile: < 740px (< 46.25em)
+ */
+
+@media (min-width: 64em) {
+    #header .header-icon-list{
+        display: none;
+    }
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    #header .header-icon-list{
+        display: none;
+    }
+}
+
+@media (max-width: 46.25em) {
+    #header{
+        overflow: hidden;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #nav li{
+        display: block;
+    }
+
+    #nav li a{
+        padding: 1px 24px;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    /* Cho hiện ra menu cấp 2 -> đặt position về giá trị mặc định */
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav li a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #header .header-icon-search{
+        display: none;
+    }
+
+    #content .col-full{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #content .member-avata{
+        width: 60%;
+    }
+
+    #content .col{
+        width: 100%;
+    }
+
+    #content .mst-16{
+        margin-top: 16px;
+    }
+
+    #content .msbt-8{
+        margin-bottom: 8px;
+    }
+
+    #content .contact-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #content .intput-name,
+    #content .infomation,
+    #content .input-infomation{
+        width: 100%;
+    }
+
+    #content .intput-name,
+    #content .intput-email,
+    #content .ipnut-message{
+        height: 35px;
+    }
+}
